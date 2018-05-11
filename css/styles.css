@@ -57,16 +57,26 @@ body{
 }
 .Play{
   background-color: #80bfff;
-  height: 500px;
+  height: 100vh;
   padding: 0px;
   margin-top: -40px;
 }
 .Play h2{
   font-size: 30px;
 }
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    height: 50px;
+}
 .col-md-4{
   text-align: center;
 }
-.rules{
-  padding: 0px;
+#rules{
+  text-align: left;
+  margin-top: -43px;
+  font-size: 14px;
+  background-color: white;
+  height: 100vh;
 }
