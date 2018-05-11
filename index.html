@@ -11,10 +11,16 @@
     <title>PigDice</title>
   </head>
   <body>
+  <!-- header -->
     <div class="header" style="position: relative; top: -20px;">
       <h1><img src="image/dice.gif" alt="" width="270px">PIG DICE<img src="image/dice.gif" alt="" width="270px"></h1>
     </div>
+  <!-- end of header -->
+
+    <!--section -->
+
     <div class="container-fluid">
+      <div class="row">
         <div class="col-md-3">
           <div class="Players">
             <h2>Choose Player</h2>
@@ -29,15 +35,16 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-9">
           <div class="Play">
             <h2>Play</h2>
             <div class="col-md-4">
               <div class="Player 1">
-                <img src="image/person.png" alt="" width="100px">
+                <img src="image/person2.png" alt="" width="100px">
               </div>
               <br>
-              <form action="/action_page.php">
+              <form action="index.html">
                 <input type="text" name="firstname" value="">
               </form>
             </div>
@@ -46,7 +53,7 @@
                 <img src="image/person.png" alt="" width="100px">
               </div>
               <br>
-              <form action="/action_page.php">
+              <form action="index.html">
                 <input type="text" name="firstname" value="">
               </form>
             </div>
@@ -61,9 +68,22 @@
                 </ol>
               </div>
             </div>
+            <div class="col-md-12">
+              <form action="/action_page.php">
+                <input type="text" name="firstname" value="Mickey">
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+
           </div>
         </div>
+
         </div>
+
+
+      </div>
+        <!--end of section -->
+
     </div>
 
   </body>
