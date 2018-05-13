@@ -34,7 +34,7 @@ Player.prototype.winnerCheck = function () {
 }
 
 var clearValues = function(){
-  $("PLAYER1").val("");
+  $("player1Name").val("");
   $(".player2Name").val("");
 }
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
     player2 =  new Player(false);
     $(".player-console").show();
 
-    var player1Name = $("PLAYER1").val();
+    var player1Name = $("player1Name").val();
     $("#player1Name").text(player1Name);
 
     var player2Name = $(".player2Name").val();
