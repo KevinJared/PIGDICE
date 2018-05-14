@@ -20,6 +20,10 @@ body{
   background-image: url("../image/background2.jpg");
 
 }
+.row h2{
+  font-size: 20px;
+  color: red;
+}
 .container{
   background-color: white;
   height: 100vh;
