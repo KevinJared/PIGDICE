@@ -6,8 +6,6 @@ function Player(turn) {
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
-  this.turn = turn;
-  this.playerName;
 }
 
 // checking for 1
@@ -24,37 +22,20 @@ Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
   // this.changeturn();
-  alert(this.playerName + ", your turn is over, pass the mouse!");
+  alert("Your turn is over, pass the mouse!");
 }
-
+// winnerCheck
 Player.prototype.winnerCheck = function () {
   if (this.totalscore >= 100) {
-    alert(this.playerName + " You are the winner!");
+    alert(" You are the winner!");
   }
 }
-
-var clearValues = function(){
-  $("player1Name").val("");
-  $(".player2Name").val("");
-}
-
 // User Interface
 $(document).ready(function() {
 
   $("button#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
-    $(".player-console").show();
-
-    var player1Name = $("player1Name").val();
-    $("#player1Name").text(player1Name);
-
-    var player2Name = $(".player2Name").val();
-    $("#player2Name").text(player2Name);
-
-    player1.playerName=player1Name;
-    player2.playerName=player2Name;
-
   });
 
   $("button#player1-roll").click(function(event){
